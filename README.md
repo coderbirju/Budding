@@ -1,4 +1,14 @@
+## Steps
+```
+Run npm install // installs all dependencies
+npm run start // runs the script in port 8080
+```
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
