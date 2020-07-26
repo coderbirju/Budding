@@ -1,0 +1,17 @@
+.s-card-body {
+    width: 320px;
+    height: 320px;
+    background-color: #202022;
+    border: none;
+}
+
+.s-heading {
+    /* text-align: center; */
+    margin-bottom: 0px;
+    color: white;
+}
+
+.s-desc {
+    /* text-align: center; */
+    color: white;
+}
