@@ -1,5 +1,9 @@
 .main-body {
-    background-color: #151515;
-    height: 100vh;
+  background-color: #151515;
+  min-height: 100vh;
+}
 
+.main-row {
+  height: 100vh;
+  background-color: #151515;
 }
