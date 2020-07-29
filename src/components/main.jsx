@@ -13,6 +13,7 @@ class mainComponent extends Component {
       Intro: null,
       nav: null,
       social: null,
+      selectedState: 'project',
     };
   }
   getHomeData() {
@@ -31,11 +32,17 @@ class mainComponent extends Component {
       .get('contact')
       .then((res) => {
         const data = res.data;
-        this.setState({ social: data });
+        this.setState({ social: data, nav: 'Arjun' });
       })
       .catch((error) => {
         console.log(error);
       });
+  }
+
+  setNavState(selectedState) {
+    this.setState({
+      selectedState,
+    });
   }
   componentDidMount() {
     this.getHomeData();
@@ -47,10 +54,15 @@ class mainComponent extends Component {
       <div className="main-body">
         <Row>
           <Col span={12}>
-            <Home intro={this.state.Intro} social={this.state.social} />
+            <Home
+              name={this.state.nav}
+              intro={this.state.Intro}
+              social={this.state.social}
+              setNavState={this.state.setNavState}
+            />
           </Col>
           <Col span={12}>
-            <Details />
+            <Details selectedState={this.state.selectedState} />
           </Col>
         </Row>
       </div>
