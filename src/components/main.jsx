@@ -31,7 +31,7 @@ class mainComponent extends Component {
       .get('contact')
       .then((res) => {
         const data = res.data;
-        this.setState({ social: data });
+        this.setState({ social: data, nav: 'Arjun' });
       })
       .catch((error) => {
         console.log(error);
@@ -47,7 +47,11 @@ class mainComponent extends Component {
       <div className="main-body">
         <Row>
           <Col span={12}>
-            <Home intro={this.state.Intro} social={this.state.social} />
+            <Home
+              name={this.state.nav}
+              intro={this.state.Intro}
+              social={this.state.social}
+            />
           </Col>
           <Col span={12}>
             <Details />
