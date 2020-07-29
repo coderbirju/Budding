@@ -13,6 +13,7 @@ class mainComponent extends Component {
       Intro: null,
       nav: null,
       social: null,
+      selectedState: 'project',
     };
   }
   getHomeData() {
@@ -37,6 +38,12 @@ class mainComponent extends Component {
         console.log(error);
       });
   }
+
+  setNavState(selectedState) {
+    this.setState({
+      selectedState,
+    });
+  }
   componentDidMount() {
     this.getHomeData();
     this.getIntroData();
@@ -51,10 +58,11 @@ class mainComponent extends Component {
               name={this.state.nav}
               intro={this.state.Intro}
               social={this.state.social}
+              setNavState={this.state.setNavState}
             />
           </Col>
           <Col span={12}>
-            <Details />
+            <Details selectedState={this.state.selectedState} />
           </Col>
         </Row>
       </div>
