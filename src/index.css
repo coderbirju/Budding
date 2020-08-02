@@ -8,12 +8,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
   font-family: 'Mulish', sans-serif;
+  background-color: #151515;
 }
 
 code {
   font-family: 'Mulish', sans-serif;
-}
-
-.index-main {
   background-color: #151515;
 }
+

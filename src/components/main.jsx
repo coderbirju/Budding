@@ -51,9 +51,9 @@ class mainComponent extends Component {
 
   render() {
     return (
-      <div className="main-body">
+      <div className="main-body ">
         <Row>
-          <Col span={12}>
+          <Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12} className='main-home'>
             <Home
               name={this.state.nav}
               intro={this.state.Intro}
@@ -61,7 +61,7 @@ class mainComponent extends Component {
               setNavState={this.state.setNavState}
             />
           </Col>
-          <Col span={12}>
+          <Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12} className='main-detail ant-col-offset-12'>
             <Details selectedState={this.state.selectedState} />
           </Col>
         </Row>

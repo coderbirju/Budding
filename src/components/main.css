@@ -4,9 +4,24 @@
 .main-body {
   background-color: #151515;
   min-height: 100vh;
+
 }
 
 .main-row {
   height: 100vh;
   background-color: #151515;
 }
+
+.main-home {
+  padding-top: 60px;
+  padding-left: 80px;
+  position:fixed;
+}
+
+.main-detail {
+  padding-top: 60px;
+  padding-right: 80px;
+}
+
+
+

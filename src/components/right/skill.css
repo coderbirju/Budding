@@ -1,9 +1,15 @@
 .s-card-body {
-  width: 320px;
-  height: 320px;
+  /* width: 240px; */
+  height: 240px;
   background-color: #202022;
   border: none;
   font-family: 'Mulish', sans-serif;
+}
+
+.s-icon {
+  text-align: center;
+  font-size: 70px;
+  color: white;
 }
 
 .s-heading {
@@ -15,4 +21,10 @@
 .s-desc {
   /* text-align: center; */
   color: white;
+}
+
+
+.s-body {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
