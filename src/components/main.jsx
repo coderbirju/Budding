@@ -27,12 +27,12 @@ class mainComponent extends Component {
         console.log(error);
       });
   }
-  getIntroData() {
+  getContactData() {
     axios
       .get('contact')
       .then((res) => {
         const data = res.data;
-        this.setState({ social: data, nav: 'Arjun' });
+        this.setState({ social: data.projects[0], nav: 'Arjun' });
       })
       .catch((error) => {
         console.log(error);
@@ -46,7 +46,7 @@ class mainComponent extends Component {
   }
   componentDidMount() {
     this.getHomeData();
-    this.getIntroData();
+    this.getContactData();
   }
 
   render() {

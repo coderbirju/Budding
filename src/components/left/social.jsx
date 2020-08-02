@@ -1,14 +1,23 @@
 import React from 'react';
-// import { Row, Col } from 'antd';
-import 'antd/dist/antd.css';
+// import 'antd/dist/antd.css';
+import './social.css';
 
 const Social = (props) => {
   return (
     <div>
-      <h2 className="p-tag-heading">
-        {props.intro ? props.intro.heading : 'Loading'}
-      </h2>
-      <p className="p-top-tag">{props.intro ? props.intro.desc : 'Loading'}</p>
+      <ul>
+        <li>
+          <a href={props.social ? props.social.github : '#'}>
+            <i class="fab fa-github"></i>Github
+          </a>
+        </li>
+        <li>
+          <a href={props.social ? props.social.linkedIn : '#'}>LinkedIn</a>
+        </li>
+        <li>
+          <a href={props.social ? props.social.email : '#'}>Email</a>
+        </li>
+      </ul>
     </div>
   );
 };
