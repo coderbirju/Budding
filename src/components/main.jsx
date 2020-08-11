@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { Row, Col } from 'antd';
-import 'antd/dist/antd.css';
-import Home from './left/home';
-import Details from './right/details';
-import './main.css';
-import axios from '../axios';
+import React, { Component } from "react";
+import { Row, Col } from "antd";
+import "antd/dist/antd.css";
+import Home from "./left/home";
+import Details from "./right/details";
+import "./main.css";
+import axios from "../axios";
 
 class mainComponent extends Component {
   constructor(props) {
@@ -13,12 +13,12 @@ class mainComponent extends Component {
       Intro: null,
       nav: null,
       social: null,
-      selectedState: 'project',
+      selectedState: "project",
     };
   }
   getHomeData() {
     axios
-      .get('home')
+      .get("home")
       .then((res) => {
         const data = res.data;
         this.setState({ Intro: data.projects[0] });
@@ -29,10 +29,10 @@ class mainComponent extends Component {
   }
   getIntroData() {
     axios
-      .get('contact')
+      .get("contact")
       .then((res) => {
         const data = res.data;
-        this.setState({ social: data, nav: 'Arjun' });
+        this.setState({ social: data, nav: "Arjun" });
       })
       .catch((error) => {
         console.log(error);
@@ -53,7 +53,15 @@ class mainComponent extends Component {
     return (
       <div className="main-body ">
         <Row>
-          <Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12} className='main-home'>
+          <Col
+            xs={24}
+            sm={24}
+            md={24}
+            lg={12}
+            xl={12}
+            xxl={12}
+            className="main-home"
+          >
             <Home
               name={this.state.nav}
               intro={this.state.Intro}
@@ -61,7 +69,15 @@ class mainComponent extends Component {
               setNavState={this.state.setNavState}
             />
           </Col>
-          <Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12} className='main-detail ant-col-offset-12'>
+          <Col
+            xs={24}
+            sm={24}
+            md={24}
+            lg={12}
+            xl={12}
+            xxl={12}
+            className="main-detail ant-col-offset-12"
+          >
             <Details selectedState={this.state.selectedState} />
           </Col>
         </Row>

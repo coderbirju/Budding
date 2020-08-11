@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import 'antd/dist/antd.css';
-import ProjectCard from './project';
-import SkillCard from './skill';
-import './details.css'
+import React, { Component } from "react";
+import "antd/dist/antd.css";
+import ProjectCard from "./project";
+import SkillCard from "./skill";
+import "./details.css";
 
 class Details extends Component {
   state = {};
