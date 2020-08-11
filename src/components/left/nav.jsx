@@ -1,6 +1,5 @@
 import React from 'react';
 import './nav.css';
-import { Button, Menu } from 'antd';
 
 const Navbar = (props) => {
   return (

@@ -60,6 +60,14 @@ a {
   text-decoration-color: inherit;
 }
 
+nav {
+  color: inherit;
+  text-decoration: inherit;
+  text-decoration-line: inherit;
+  text-decoration-style: inherit;
+  text-decoration-color: inherit;
+}
+
 .items-center {
   align-items: center;
 }
