@@ -1,27 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
 
 .main-body {
   background-color: #151515;
   min-height: 100vh;
 
 }
-
 .main-row {
   height: 100vh;
   background-color: #151515;
 }
 
 .main-home {
-  padding-top: 60px;
-  padding-left: 80px;
-  position:fixed;
+  padding-top: 4rem;
+  padding-left: 6rem;
+  position: fixed;
 }
 
 .main-detail {
-  padding-top: 60px;
-  padding-right: 80px;
+  padding-top: 4rem;
+  padding-right: 6rem;
 }
 
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
 
+}
 
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  .main-home {
+    padding-top: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  .ant-col-offset-12 {
+    margin-left: 0px !important;
+  }
+
+  .main-detail {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+/* Smartphones (portrait) Android and later stuffs----------- */
+@media only screen and (max-width: 480px) {
+  .main-home {
+    padding-top: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  .ant-col-offset-12 {
+    margin-left: 0px !important;
+  }
+
+  .main-detail {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+/* Tablets, iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .main-home {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    position: fixed;
+  }
+
+  .main-detail {
+    padding-top: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Tablets, iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .main-home {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    position: relative;
+  }
+  .ant-col-offset-12 {
+    margin-left: 0px !important;
+  }
+
+  .main-detail {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+/* Desktops and laptops ----------- */
+/* @media only screen
+and (min-width : 1224px) {
+
+} */
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  .main-home {
+    padding-top: 4rem;
+    padding-left: 20rem;
+    position: fixed;
+  }
+
+  .main-detail {
+    padding-top: 4rem;
+    padding-right: 20rem;
+  }
+}

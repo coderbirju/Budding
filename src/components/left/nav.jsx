@@ -1,13 +1,13 @@
-import React from 'react';
-import { Menu } from 'antd';
+import React from "react";
+import { Menu } from "antd";
 
 const Navbar = (props) => {
   return (
     <Menu
       onClick={props.setNavState}
       style={{ width: 256 }}
-      defaultSelectedKeys={['1']}
-      defaultOpenKeys={['sub1']}
+      defaultSelectedKeys={["1"]}
+      defaultOpenKeys={["sub1"]}
       mode="verticle"
     >
       <Menu.ItemGroup key="g1" title="Item 1">
