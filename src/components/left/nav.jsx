@@ -1,11 +1,12 @@
 import React from 'react';
 import './nav.css';
+// import { menu } from 'antd'
 
 const Navbar = (props) => {
   return (
     <div className="hidden md:block ">
       <ul className="ulclass flex flex-row md:flex-col md:-my-16">
-        <li className="liclass md:my-16  ">
+        <li className="liclass md:my-16">
           <a
             className="inline-flex items-center hover:text-zenith transition"
             href="#projects"

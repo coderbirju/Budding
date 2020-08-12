@@ -13,9 +13,7 @@ const Home = (props) => {
           Hello, I'm <br />
           {props.intro ? props.intro.heading : 'Loading'}.
         </h1>
-        <p className="p-top-tag">
-          {props.intro ? props.intro.desc : 'Loading'}
-        </p>
+        <p className="desc">{props.intro ? props.intro.desc : 'Loading'}</p>
       </div>
 
       <Navbar setNavState={props.setNavState} />
