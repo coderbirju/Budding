@@ -12,7 +12,7 @@ const SkillCard = () => {
   return (
     <div className="s-body">
       <Row gutter={[8, 8]}>
-        <Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12}>
+        <Col xs={24} sm={24} md={24} lg={12} xl={12} xxl={12}>
           <div>
           <Card className="s-card-body">
             <div className="s-icon">
