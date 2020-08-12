@@ -1,0 +1,29 @@
+.p-tag-heading {
+  color: white;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+.desc {
+  color: white;
+  text-transform: uppercase;
+  font-style: bold;
+  margin-right: 10rem;
+  font-size: 8px;
+}
+
+.text-2xl {
+  font-size: 78px;
+}
+
+@media (min-width: 1280px) {
+  .lg\:text-4xl {
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .lg\:leading-none {
+    line-height: 1;
+  }
+}

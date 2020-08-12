@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { Row, Col } from "antd";
-import "antd/dist/antd.css";
-import Home from "./left/home";
-import Details from "./right/details";
-import "./main.css";
-import axios from "../axios";
+import React, { Component } from 'react';
+import { Row, Col } from 'antd';
+import 'antd/dist/antd.css';
+import Home from './left/home';
+import Details from './right/details';
+import './main.css';
+import axios from '../axios';
 
 class mainComponent extends Component {
   constructor(props) {
@@ -13,12 +13,12 @@ class mainComponent extends Component {
       Intro: null,
       nav: null,
       social: null,
-      selectedState: "project",
+      selectedState: 'project',
     };
   }
   getHomeData() {
     axios
-      .get("home")
+      .get('home')
       .then((res) => {
         const data = res.data;
         this.setState({ Intro: data.projects[0] });
@@ -27,12 +27,12 @@ class mainComponent extends Component {
         console.log(error);
       });
   }
-  getIntroData() {
+  getContactData() {
     axios
-      .get("contact")
+      .get('contact')
       .then((res) => {
         const data = res.data;
-        this.setState({ social: data, nav: "Arjun" });
+        this.setState({ social: data.social_contact[0], nav: 'Arjun' });
       })
       .catch((error) => {
         console.log(error);
@@ -46,7 +46,7 @@ class mainComponent extends Component {
   }
   componentDidMount() {
     this.getHomeData();
-    this.getIntroData();
+    this.getContactData();
   }
 
   render() {

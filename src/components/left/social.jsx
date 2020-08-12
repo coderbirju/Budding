@@ -1,14 +1,69 @@
-import React from "react";
-// import { Row, Col } from 'antd';
-import "antd/dist/antd.css";
+import React from 'react';
+// import 'antd/dist/antd.css';
+import './social.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faGithub,
+  faLinkedin,
+  faGoogle,
+  faInstagramSquare,
+  faTwitter,
+  faSpotify,
+  faSoundcloud,
+} from '@fortawesome/free-brands-svg-icons';
+import profileImg from './static/avatar.png';
 
 const Social = (props) => {
   return (
     <div>
-      <h2 className="p-tag-heading">
-        {props.intro ? props.intro.heading : "Loading"}
-      </h2>
-      <p className="p-top-tag">{props.intro ? props.intro.desc : "Loading"}</p>
+      <ul>
+        <li className="social">
+          <img src={profileImg} alt="ProfilePic" className="avatar" />
+        </li>
+        <li>
+          <a href={props.social ? props.social.github : '#'}>
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </li>
+        <li>
+          <a href={props.social ? props.social.linkedIn : '#'}>
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+        </li>
+        <li>
+          <a
+            href={
+              props.social
+                ? props.social.email
+                  ? props.social.email
+                  : '#'
+                : '#'
+            }
+          >
+            <FontAwesomeIcon icon={faGoogle} />
+          </a>
+        </li>
+        <li>
+          <a href={props.social ? props.social.instagram : '#'}>
+            <FontAwesomeIcon icon={faInstagramSquare} />
+          </a>
+        </li>
+        <li>
+          <a href={props.social ? props.social.twitter : '#'}>
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+        </li>
+        <li>
+          <a href={props.social ? props.social.spotify : '#'}>
+            <FontAwesomeIcon icon={faSpotify} />
+          </a>
+        </li>
+        <li>
+          <a href={props.social ? props.social.soundcloud : '#'}>
+            <FontAwesomeIcon icon={faSoundcloud} />
+          </a>
+        </li>
+      </ul>
     </div>
   );
 };

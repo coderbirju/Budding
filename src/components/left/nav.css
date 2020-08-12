@@ -1,0 +1,123 @@
+.ulclass {
+  list-style-type: none;
+  /* margin: 0;
+  padding: 10 0;
+  overflow: hidden; */
+  list-style-position: initial;
+  list-style-image: initial;
+  list-style-type: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+ul {
+  list-style: none;
+  list-style-position: initial;
+  list-style-image: initial;
+  list-style-type: none;
+  padding: 0;
+}
+
+.liclass {
+  /* display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none; */
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+li :hover {
+  background-color: #111111;
+}
+
+.transition {
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition: all 0.2s ease-in-out;
+}
+
+.hover\:text-zenith:hover,
+.text-zenith {
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  text-decoration-line: inherit;
+  text-decoration-style: inherit;
+  text-decoration-color: inherit;
+}
+
+nav {
+  color: inherit;
+  text-decoration: inherit;
+  text-decoration-line: inherit;
+  text-decoration-style: inherit;
+  text-decoration-color: inherit;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.md\:my-16 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.w-24 {
+  width: 24px;
+}
+
+.w-48 {
+  width: 48px;
+}
+
+.mt-72 {
+  margin-top: 72px;
+}
+
+.mx-16 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.h-px {
+  height: 1px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.md\:block {
+  display: block;
+}

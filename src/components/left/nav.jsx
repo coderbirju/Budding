@@ -1,34 +1,33 @@
-import React from "react";
-import { Menu } from "antd";
+import React from 'react';
+import './nav.css';
+// import { menu } from 'antd'
 
 const Navbar = (props) => {
   return (
-    <Menu
-      onClick={props.setNavState}
-      style={{ width: 256 }}
-      defaultSelectedKeys={["1"]}
-      defaultOpenKeys={["sub1"]}
-      mode="verticle"
-    >
-      <Menu.ItemGroup key="g1" title="Item 1">
-        <Menu.Item key="1">Option 1</Menu.Item>
-        <Menu.Item key="2">Option 2</Menu.Item>
-      </Menu.ItemGroup>
-      <Menu.ItemGroup key="g2" title="Item 2">
-        <Menu.Item key="3">Option 3</Menu.Item>
-        <Menu.Item key="4">Option 4</Menu.Item>
-      </Menu.ItemGroup>
-
-      <Menu.Item key="5">Option 5</Menu.Item>
-      <Menu.Item key="6">Option 6</Menu.Item>
-      <Menu.Item key="7">Option 7</Menu.Item>
-      <Menu.Item key="8">Option 8</Menu.Item>
-
-      <Menu.Item key="9">Option 9</Menu.Item>
-      <Menu.Item key="10">Option 10</Menu.Item>
-      <Menu.Item key="11">Option 11</Menu.Item>
-      <Menu.Item key="12">Option 12</Menu.Item>
-    </Menu>
+    <div className="hidden md:block ">
+      <ul className="ulclass flex flex-row md:flex-col md:-my-16">
+        <li className="liclass md:my-16">
+          <a
+            className="inline-flex items-center hover:text-zenith transition"
+            href="#projects"
+          >
+            <span>01</span>
+            <span className="inline-block w-48 h-px mx-16 transition"></span>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li className="liclass md:my-16">
+          <a
+            className="inline-flex items-center hover:text-zenith transition"
+            href="#projects"
+          >
+            <span>02</span>
+            <span className="inline-block w-48 h-px mx-16 transition"></span>
+            <span>Skills</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   );
 };
 
