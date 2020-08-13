@@ -1,19 +1,33 @@
-.p-tag-heading {
+.h-tag-heading {
   color: white;
-  margin-bottom: 0px;
+  margin-bottom: 2rem;
   font-weight: 700;
+  line-height: 1;
 }
 
 .desc {
-  color: white;
-  text-transform: uppercase;
+  color: #949495;
+  text-transform: capitalize;
   font-style: bold;
   margin-right: 10rem;
-  font-size: 8px;
+  font-size: 0.8rem;
+  line-height: 2;
 }
 
 .text-2xl {
   font-size: 78px;
+}
+
+.home_div {
+  height: 100vh;
+}
+
+.footer {
+  margin-top: 72px;
+  position: relative;
+  width: 100%;
+  align-self: bottom;
+  bottom: 0;
 }
 
 @media (min-width: 1280px) {
