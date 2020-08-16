@@ -1,9 +1,11 @@
+/* .project-card-holder {
+} */
+
 .p-card-body {
   border: none;
   background-color: #202022;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  font-family: "Mulish", sans-serif;
-  padding: 0.8rem;
+  padding: 1rem;
 }
 
 .p-top-tag {
@@ -11,14 +13,17 @@
   text-transform: uppercase;
   font-style: bold;
   margin: 0px;
-  font-size: 0.6rem;
+  font-size: 0.9em;
+  letter-spacing: 0.2em;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .p-tag-heading {
   color: white;
   margin-bottom: 0px;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 2em;
+  font-family: "Mulish", sans-serif;
 }
 
 .p-desc {
@@ -26,18 +31,21 @@
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 6px;
+  font-family: "Mulish", sans-serif;
 }
 
 .p-stars {
   color: #949495;
-  padding-top: 6px;
+  padding-top: 10px;
 }
 
 .p-star-icon {
-  margin-right: 4px;
+  margin-right: 6px;
   padding: 1px;
 }
 
 .p-star-number {
-  font-size: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 0.2em;
 }

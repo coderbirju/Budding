@@ -1,7 +1,7 @@
 .h-tag-heading {
   color: white;
   margin-bottom: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1;
 }
 
@@ -10,7 +10,7 @@
   text-transform: capitalize;
   font-style: bold;
   margin-right: 10rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 2;
 }
 
@@ -22,22 +22,20 @@
   height: 100vh;
 }
 
-.footer {
-  margin-top: 72px;
+.home-nav {
+  padding-bottom: 8rem;
+}
+
+.home-footer {
+  margin-top: 100px;
   position: relative;
   width: 100%;
   align-self: bottom;
   bottom: 0;
 }
 
-@media (min-width: 1280px) {
-  .lg\:text-4xl {
-    font-size: 64px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .lg\:leading-none {
-    line-height: 1;
+@media only screen and (min-width: 1824px) {
+  .home-nav {
+    padding-bottom: 35rem;
   }
 }

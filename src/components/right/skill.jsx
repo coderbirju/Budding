@@ -14,13 +14,16 @@ const SkillCard = () => {
       <Row gutter={[8, 8]}>
         <Col xs={24} sm={24} md={24} lg={12} xl={12} xxl={12}>
           <div>
-          <Card className="s-card-body">
-            <div className="s-icon">
-              <FontAwesomeIcon icon={faPython} />
-            </div>
-            <h1 className="s-heading">Python</h1>
-            <p className="s-desc"> Best programming language out there</p>
-          </Card>
+            <Card bordered={false} className="s-card-body">
+              <p className="s-top-tag">Programming</p>
+              <div className="s-bottom">
+                <div className="s-icon">
+                  <FontAwesomeIcon icon={faPython} />
+                </div>
+                <h1 className="s-heading">Python</h1>
+                <p className="s-desc"> Best programming language out there</p>
+              </div>
+            </Card>
           </div>
         </Col>
 

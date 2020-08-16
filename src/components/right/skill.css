@@ -1,13 +1,17 @@
 .s-card-body {
   /* width: 240px; */
-  height: 280px;
+  height: 300px;
   background-color: #202022;
   border: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
   font-family: "Mulish", sans-serif;
 }
+
 .s-icon {
-  text-align: center;
-  font-size: 70px;
+  font-size: 50px;
   color: white;
 }
 
@@ -21,9 +25,22 @@
 .s-desc {
   /* text-align: center; */
   color: white;
+  margin-bottom: 0!important;
 }
 
 .s-body {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.s-top-tag {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.9em;
+  color: white;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.s-bottom {
+  bottom: 0;
 }
