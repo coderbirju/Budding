@@ -25,6 +25,7 @@ const Social = (props) => {
                 className="social-a"
                 target="_blank"
                 href={props.social ? props.social.github : "#"}
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faGithub} />
               </a>
@@ -34,6 +35,7 @@ const Social = (props) => {
                 className="social-a"
                 target="_blank"
                 href={props.social ? props.social.linkedIn : "#"}
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
@@ -49,6 +51,7 @@ const Social = (props) => {
                       : "#"
                     : "#"
                 }
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faGoogle} />
               </a>
@@ -58,6 +61,7 @@ const Social = (props) => {
                 className="social-a"
                 target="_blank"
                 href={props.social ? props.social.instagram : "#"}
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faInstagramSquare} />
               </a>
@@ -67,6 +71,7 @@ const Social = (props) => {
                 className="social-a"
                 target="_blank"
                 href={props.social ? props.social.twitter : "#"}
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
@@ -76,6 +81,7 @@ const Social = (props) => {
                 className="social-a"
                 target="_blank"
                 href={props.social ? props.social.spotify : "#"}
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faSpotify} />
               </a>
@@ -85,6 +91,7 @@ const Social = (props) => {
                 className="social-a"
                 target="_blank"
                 href={props.social ? props.social.soundcloud : "#"}
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faSoundcloud} />
               </a>

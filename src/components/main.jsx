@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { Row, Col } from 'antd';
-import 'antd/dist/antd.css';
-import Home from './left/home';
-import Details from './right/details';
-import './main.css';
-import axios from '../axios';
+import React, { Component } from "react";
+import { Row, Col } from "antd";
+import "antd/dist/antd.css";
+import Home from "./left/home";
+import Details from "./right/details";
+import "./main.css";
+import axios from "../axios";
 
 class mainComponent extends Component {
   constructor(props) {
@@ -13,15 +13,18 @@ class mainComponent extends Component {
       Intro: null,
       nav: null,
       social: null,
-      selectedState: 'project',
+      project: null,
+      skill: null,
+      selectedState: "project",
     };
   }
   getHomeData() {
     axios
-      .get('home')
+      .get("home")
       .then((res) => {
         const data = res.data;
-        this.setState({ Intro: data.projects[0] });
+        console.log(data);
+        this.setState({ Intro: data.home[0] });
       })
       .catch((error) => {
         console.log(error);
@@ -29,10 +32,38 @@ class mainComponent extends Component {
   }
   getContactData() {
     axios
-      .get('contact')
+      .get("contact")
       .then((res) => {
         const data = res.data;
-        this.setState({ social: data.social_contact[0], nav: 'Arjun' });
+        this.setState({ social: data.social_contact[0], nav: "Arjun" });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
+  getProjectData() {
+    axios
+      .get("project")
+      .then((res) => {
+        const data = res.data;
+        this.setState({
+          project: data.projects,
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
+  getSkillData() {
+    axios
+      .get("skill")
+      .then((res) => {
+        const data = res.data;
+        this.setState({
+          project: data.skills,
+        });
       })
       .catch((error) => {
         console.log(error);
@@ -47,6 +78,8 @@ class mainComponent extends Component {
   componentDidMount() {
     this.getHomeData();
     this.getContactData();
+    this.getProjectData();
+    this.getSkillData();
   }
 
   render() {
@@ -78,7 +111,11 @@ class mainComponent extends Component {
             xxl={12}
             className="main-detail ant-col-offset-12"
           >
-            <Details selectedState={this.state.selectedState} />
+            <Details
+              project={this.state.project}
+              skill={this.state.skill}
+              selectedState={this.state.selectedState}
+            />
           </Col>
         </Row>
       </div>
