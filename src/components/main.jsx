@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { Row, Col } from "antd";
-import "antd/dist/antd.css";
-import Home from "./left/home";
-import Details from "./right/details";
-import "./main.css";
-import axios from "../axios";
+import React, { Component } from 'react';
+import { Row, Col } from 'antd';
+import 'antd/dist/antd.css';
+import Home from './left/home';
+import Details from './right/details';
+import './main.css';
+import axios from '../axios';
 
 class mainComponent extends Component {
   constructor(props) {
@@ -15,15 +15,15 @@ class mainComponent extends Component {
       social: null,
       project: null,
       skill: null,
-      selectedState: "project",
+      selectedState: 'project',
     };
+    this.setNavState = this.setNavState.bind(this);
   }
   getHomeData() {
     axios
-      .get("home")
+      .get('home')
       .then((res) => {
         const data = res.data;
-        console.log(data);
         this.setState({ Intro: data.home[0] });
       })
       .catch((error) => {
@@ -32,10 +32,10 @@ class mainComponent extends Component {
   }
   getContactData() {
     axios
-      .get("contact")
+      .get('contact')
       .then((res) => {
         const data = res.data;
-        this.setState({ social: data.social_contact[0], nav: "Arjun" });
+        this.setState({ social: data.social_contact[0], nav: 'Arjun' });
       })
       .catch((error) => {
         console.log(error);
@@ -44,12 +44,11 @@ class mainComponent extends Component {
 
   getProjectData() {
     axios
-      .get("project")
+      .get('project')
       .then((res) => {
         const data = res.data;
-        this.setState({
-          project: data.projects,
-        });
+        console.log('data: ', data.projects);
+        this.setState({ project: data.projects });
       })
       .catch((error) => {
         console.log(error);
@@ -58,11 +57,11 @@ class mainComponent extends Component {
 
   getSkillData() {
     axios
-      .get("skill")
+      .get('skill')
       .then((res) => {
         const data = res.data;
         this.setState({
-          project: data.skills,
+          skill: data.skills,
         });
       })
       .catch((error) => {
@@ -76,9 +75,9 @@ class mainComponent extends Component {
     });
   }
   componentDidMount() {
+    this.getProjectData();
     this.getHomeData();
     this.getContactData();
-    this.getProjectData();
     this.getSkillData();
   }
 
@@ -99,7 +98,7 @@ class mainComponent extends Component {
               name={this.state.nav}
               intro={this.state.Intro}
               social={this.state.social}
-              setNavState={this.state.setNavState}
+              setNavState={this.setNavState}
             />
           </Col>
           <Col
@@ -113,7 +112,6 @@ class mainComponent extends Component {
           >
             <Details
               project={this.state.project}
-              skill={this.state.skill}
               selectedState={this.state.selectedState}
             />
           </Col>
