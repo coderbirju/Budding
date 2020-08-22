@@ -14,12 +14,7 @@ const ProjectCard = (projects) => {
       xxl={12}
       className="project-card-holder"
     >
-      if (projects != null)
-      {projects.map((project) => (
-        <proCard key={project.id} project={project}></proCard>
-      ))}
-      else
-      {<div> HI </div>}
+     <proCard/>
     </div>
   );
 };
