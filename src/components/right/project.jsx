@@ -1,9 +1,16 @@
 import React from 'react';
-import { proCard } from './proCard';
+import ProCard from './ProCard';
 import './project.css';
 
-const ProjectCard = (projects) => {
-  console.log('props inside project: ', projects, typeof projects);
+const ProjectCard = (props) => {
+  let renderComp;
+  if (props.projects != null) {
+    renderComp = props.projects.map((project) => (
+      <ProCard key={project.name} project={project} />
+    ));
+  } else {
+    renderComp = <div> Loading </div>;
+  }
   return (
     <div
       xs={24}
@@ -14,12 +21,7 @@ const ProjectCard = (projects) => {
       xxl={12}
       className="project-card-holder"
     >
-      if (projects != null)
-      {projects.map((project) => (
-        <proCard key={project.id} project={project}></proCard>
-      ))}
-      else
-      {<div> HI </div>}
+      {renderComp}
     </div>
   );
 };
