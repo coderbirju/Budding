@@ -15,14 +15,13 @@ const SkillCard = () => {
         <Col xs={24} sm={24} md={24} lg={12} xl={12} xxl={12}>
           <div>
             <Card bordered={false} className="s-card-body">
-              <p className="s-top-tag">Programming</p>
-              <div className="s-bottom">
-                <div className="s-icon">
-                  <FontAwesomeIcon icon={faPython} />
-                </div>
-                <h1 className="s-heading">Python</h1>
-                <p className="s-desc"> Best programming language out there</p>
+              <div className="s-icon">
+                <FontAwesomeIcon icon={faPython} />
               </div>
+              <h1 className="s-heading">Python</h1>
+              <p className="s-desc">
+                Transfer source files, artifacts and static files to digital a DigitalOcean droplet. Artifacts and static file
+              </p>
             </Card>
           </div>
         </Col>
@@ -33,7 +32,8 @@ const SkillCard = () => {
               <FontAwesomeIcon icon={faJava} />
             </div>
             <h1 className="s-heading">Java</h1>
-            <p className="s-desc"> Shittiest complex language</p>
+            <p className="s-desc">Transfer source files, artifacts and static files to digital a
+                DigitalOcean droplet. Artifacts and static file</p>
           </Card>
         </Col>
 
@@ -43,7 +43,10 @@ const SkillCard = () => {
               <FontAwesomeIcon icon={faJs} />
             </div>
             <h1 className="s-heading">Javascript</h1>
-            <p className="s-desc"> This one beats java to it.</p>
+            <p className="s-desc">
+                Transfer source files, artifacts and static files to digital a
+                DigitalOcean droplet. Artifacts and static file
+              </p>
           </Card>
         </Col>
 
@@ -53,7 +56,10 @@ const SkillCard = () => {
               <FontAwesomeIcon icon={faVideo} />
             </div>
             <h1 className="s-heading">FinalCutPro X</h1>
-            <p className="s-desc"> Video editing never has been simpler</p>
+            <p className="s-desc">
+                Transfer source files, artifacts and static files to digital a
+                DigitalOcean droplet. Artifacts and static file
+              </p>
           </Card>
         </Col>
       </Row>

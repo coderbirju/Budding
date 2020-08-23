@@ -4,6 +4,7 @@
 .p-card-body {
   border: none;
   background-color: #202022;
+  transition: transform .2s;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   padding: 1rem;
 }
@@ -49,3 +50,10 @@
   font-size: 0.9em;
   letter-spacing: 0.2em;
 }
+
+.p-card-body:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
