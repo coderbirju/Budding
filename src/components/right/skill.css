@@ -3,7 +3,14 @@
   height: 300px;
   background-color: #202022;
   border: none;
+  transition: transform .2s;
   font-family: "Mulish", sans-serif;
+}
+
+.s-card-body:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
 }
 
 .s-icon {

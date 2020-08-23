@@ -44,74 +44,33 @@
   }
 }
 
-/* Smartphones (portrait) Android and later stuffs----------- */
-@media only screen and (max-width: 480px) {
-  .main-home {
-    padding-top: 2rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    position: relative;
-  }
-  .ant-col-offset-12 {
-    margin-left: 0px !important;
-  }
 
-  .main-detail {
-    padding-top: 1rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
 }
 
-/* Tablets, iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  .main-home {
-    padding-top: 2rem;
-    padding-left: 2rem;
-    position: fixed;
-  }
-
-  .main-detail {
-    padding-top: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-/* Tablets, iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .main-home {
-    padding-top: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    position: relative;
-  }
-  .ant-col-offset-12 {
-    margin-left: 0px !important;
-  }
-
-  .main-detail {
-    padding-top: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-  }
-}
-
-/* Desktops and laptops ----------- */
-/* @media only screen
-and (min-width : 1224px) {
-
-} */
 
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   .main-home {
     padding-top: 4rem;
-    padding-left: 20rem;
+    padding-left: 35rem;
     position: fixed;
+
   }
 
   .main-detail {
     padding-top: 4rem;
-    padding-right: 20rem;
+    padding-right: 35rem;
   }
 }
