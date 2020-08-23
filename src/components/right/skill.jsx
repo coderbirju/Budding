@@ -20,8 +20,7 @@ const SkillCard = () => {
               </div>
               <h1 className="s-heading">Python</h1>
               <p className="s-desc">
-                Transfer source files, artifacts and static files to digital a
-                DigitalOcean droplet. Artifacts and static file
+                Transfer source files, artifacts and static files to digital a DigitalOcean droplet. Artifacts and static file
               </p>
             </Card>
           </div>
