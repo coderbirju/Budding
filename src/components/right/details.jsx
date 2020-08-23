@@ -7,7 +7,6 @@ import './details.css';
 class Details extends Component {
   constructor(props) {
     super(props);
-    console.log('props: ', props);
     this.myRef = React.createRef();
     this.textInput = React.createRef();
     this.focusTextInput = this.focusTextInput.bind(this);
@@ -19,7 +18,6 @@ class Details extends Component {
   }
   state = {};
   render() {
-    // if this.props.selectedstate = project return ProjectCard, else show skillCard
     return (
       <div>
         <div ref={this.myRef}>
