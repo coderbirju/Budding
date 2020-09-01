@@ -1,5 +1,5 @@
 import React from 'react';
-import ProCard from './ProCard';
+import ProCard from './proCard';
 import './project.css';
 
 const ProjectCard = (props) => {
