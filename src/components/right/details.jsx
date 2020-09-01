@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'antd/dist/antd.css';
 import ProjectCard from './project';
 import SkillCard from './skill';
+import { navConst } from '../../constants';
 import './details.css';
 
 class Details extends Component {
@@ -18,23 +19,25 @@ class Details extends Component {
   }
   state = {};
   render() {
+    const y =
+      this.props.selectedState === navConst.Project
+        ? 0
+        : this.props.selectedState === navConst.Skill
+        ? -500
+        : -1000;
+    const styles = {
+      transform: `translateY(${y}px)`,
+      transition: 'transform .2s',
+    };
+
     return (
       <div>
-        <div ref={this.myRef}>
+        <div style={styles}>
           <ProjectCard projects={this.props ? this.props.project : null} />
         </div>
-
-        <input
-          type="button"
-          value="Focus the text input"
-          onClick={this.focusTextInput}
-        />
-
-        <div ref={this.textInput}>
+        <div style={styles}>
           <SkillCard />
         </div>
-
-        {/* ref={(skill) => (this.props.selectedState = skill)} */}
       </div>
     );
   }
