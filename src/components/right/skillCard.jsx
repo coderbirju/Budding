@@ -7,26 +7,23 @@ import { faJava } from "@fortawesome/free-brands-svg-icons";
 import { faJs } from "@fortawesome/free-brands-svg-icons";
 import {} from "@fortawesome/free-brands-svg-icons";
 import "./skill.css";
-import SkillCard from './skillCard';
 
-const Skill = (props) => {
-  let renderComp;
-  if (props.skills != null) {
-    renderComp = props.skills.map((skill) => (
-      <SkillCard key={skill.skill_name} skill={skill} />
-    ));
-  } else {
-    renderComp = <div> Loading </div>;
-  }
+const SkillCard = (prop) => {
   return (
-    <div className="s-body">
-      <Row gutter={[8, 8]}>
-
-        {renderComp}
-    </Row>
-
+    <Col xs={24} sm={24} md={24} lg={12} xl={12} xxl={12}>
+    <div>
+      <a href={prop.skill.link}>
+        <Card bordered={false} className="s-card-body">
+          <div className="s-icon">
+            <FontAwesomeIcon icon={prop.skill.logo} />
+          </div>
+          <h1 className="s-heading">{prop.skill.skill_name}</h1>
+          <p className="s-desc">{prop.skill.desc}</p>
+        </Card>
+      </a>
     </div>
+    </Col>
   );
 };
 
-export default Skill;
+export default SkillCard;

@@ -36,7 +36,7 @@ class Details extends Component {
           <ProjectCard projects={this.props ? this.props.project : null} />
         </div>
         <div style={styles}>
-          <SkillCard />
+          <SkillCard skills={this.props ? this.props.skill: null}/>
         </div>
       </div>
     );
