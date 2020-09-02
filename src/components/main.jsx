@@ -112,6 +112,7 @@ class mainComponent extends Component {
           >
             <Details
               project={this.state.project}
+              skill = {this.state.skill}
               selectedState={this.state.selectedState}
             />
           </Col>
