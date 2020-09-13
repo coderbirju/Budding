@@ -1,10 +1,5 @@
 import React, { Component } from "react";
 import { Card, Row, Col } from "antd";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faVideo } from "@fortawesome/free-solid-svg-icons";
-import { faPython } from "@fortawesome/free-brands-svg-icons";
-import { faJava } from "@fortawesome/free-brands-svg-icons";
-import { faJs } from "@fortawesome/free-brands-svg-icons";
 import {} from "@fortawesome/free-brands-svg-icons";
 import "./skill.css";
 import SkillCard from './skillCard';
