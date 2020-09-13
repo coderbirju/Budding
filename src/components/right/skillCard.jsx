@@ -1,10 +1,5 @@
 import React, { Component } from "react";
 import { Card, Row, Col } from "antd";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faVideo } from "@fortawesome/free-solid-svg-icons";
-import { faPython } from "@fortawesome/free-brands-svg-icons";
-import { faJava } from "@fortawesome/free-brands-svg-icons";
-import { faJs } from "@fortawesome/free-brands-svg-icons";
 import {} from "@fortawesome/free-brands-svg-icons";
 import "./skill.css";
 
@@ -15,7 +10,8 @@ const SkillCard = (prop) => {
       <a href={prop.skill.link}>
         <Card bordered={false} className="s-card-body">
           <div className="s-icon">
-            <FontAwesomeIcon icon={prop.skill.logo} />
+            {/* <FontAwesomeIcon icon={prop.skill.logo} /> */}
+            <i className={prop.skill.logo}></i>
           </div>
           <h1 className="s-heading">{prop.skill.skill_name}</h1>
           <p className="s-desc">{prop.skill.desc}</p>
