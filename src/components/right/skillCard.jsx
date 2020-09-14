@@ -6,7 +6,7 @@ import "./skill.css";
 const SkillCard = (prop) => {
   return (
     <Col xs={24} sm={24} md={24} lg={12} xl={12} xxl={12}>
-    <div>
+    <div className='s-card-div'>
       <a href={prop.skill.link}>
         <Card bordered={false} className="s-card-body">
           <div className="s-icon">
