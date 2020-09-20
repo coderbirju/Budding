@@ -52,9 +52,13 @@
   letter-spacing: 0.2em;
 }
 
-.p-card-body:hover {
+.project-card-holder:hover .p-card-body {
+  opacity: 0.5;
+}
+
+.project-card-holder:hover .p-card-body:hover {
+  opacity: 1;
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1);
 }
-

@@ -47,7 +47,6 @@ class mainComponent extends Component {
       .get('project')
       .then((res) => {
         const data = res.data;
-        console.log('data: ', data.projects);
         this.setState({ project: data.projects });
       })
       .catch((error) => {

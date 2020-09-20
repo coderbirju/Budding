@@ -7,11 +7,17 @@
   font-family: "Mulish", sans-serif;
 }
 
-.s-card-body:hover {
+.s-body:hover .s-card-body{
+  opacity: 0.5;
+}
+
+.s-body:hover .s-card-body:hover {
+  opacity: 1;
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1);
 }
+
 
 .s-icon {
   font-size: 60px;
