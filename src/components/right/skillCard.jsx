@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Card, Row, Col } from "antd";
+import React from "react";
+import { Card, Col } from "antd";
 import {} from "@fortawesome/free-brands-svg-icons";
 import "./skill.css";
 
