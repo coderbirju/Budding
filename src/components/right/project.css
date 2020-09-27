@@ -62,3 +62,18 @@
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1);
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+}
+
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+
+}

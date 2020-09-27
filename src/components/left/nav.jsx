@@ -6,7 +6,7 @@ import './nav.css';
 
 const Navbar = (props) => {
   return (
-    <div className="">
+    <div className="nav-ul-holder">
       <ul className="nav-ul">
         <li className="nav-li">
           <a

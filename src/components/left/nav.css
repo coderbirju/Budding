@@ -5,14 +5,20 @@
 }
 
 .nav-li {
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .nav-a {
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-transform: uppercase;
   color: #949495;
+  letter-spacing: 0.1em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav-ul-holder {
+  padding-top: 40px;
 }
 
 .hover\:nav-a:hover,
@@ -96,4 +102,15 @@
   to {
     -webkit-transform: scale(1);
   }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1280px) {
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
 }

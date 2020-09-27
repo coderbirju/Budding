@@ -1,5 +1,6 @@
 .social-div {
-  bottom: 0;
+  bottom: 30px;
+  position: fixed;
 }
 
 .social-span {
@@ -28,4 +29,29 @@
 .social-a {
   color: white;
   font-size: 1.5em;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .social-div {
+    bottom: 40px;
+    position: fixed;
+  }
+
+}
+
+@media only screen and (min-width: 1280px) {
+  .social-div {
+    bottom: 30px;
+    position: fixed;
+  }
+}
+
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  .social-div {
+    bottom: 60px;
+    position: fixed;
+  }
 }
