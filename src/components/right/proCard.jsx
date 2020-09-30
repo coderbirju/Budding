@@ -8,7 +8,7 @@ import './project.css';
 const ProCard = (prop) => {
   return (
     <Card className="p-card-body">
-      <a href={prop.project.link} target="_blank">
+      <a href={prop.project.link} target="_blank" rel="noopener noreferrer">
         <p className="p-top-tag">{prop.project.tool}</p>
         <h2 className="p-tag-heading">{prop.project.name}</h2>
         <p className="p-desc">{prop.project.desc}</p>
