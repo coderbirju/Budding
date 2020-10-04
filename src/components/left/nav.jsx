@@ -10,7 +10,7 @@ const Navbar = (props) => {
       <ul className="nav-ul">
         <li className="nav-li">
           <a
-            className="nav-a nav-transition "
+            className="nav-a nav-transition hover:nav-a:hover"
             onClick={() => props.setNavState('project')}
           >
             <span className="nav-number">01</span>
