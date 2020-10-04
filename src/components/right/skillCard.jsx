@@ -6,7 +6,7 @@ import "./skill.css";
 const SkillCard = (prop) => {
   return (
     <Col xs={24} sm={24} md={24} lg={12} xl={12} xxl={12}>
-    <div className='s-card-div' style={{transform: "translateY(23.65px)"}}>
+    <div className='s-card-div' style={{transform: prop.skill.card_style}}>
       <a href={prop.skill.link} target="_blank" rel="noopener noreferrer">
         <Card bordered={false} className="s-card-body">
           <div className="s-icon">

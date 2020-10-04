@@ -13,9 +13,9 @@ const Navbar = (props) => {
             className="nav-a nav-transition hover:nav-a:hover"
             onClick={() => props.setNavState('project')}
           >
-            <span className="text-xs tracking-wide">01</span>
-            <span className="inline-block w-24 h-px mx-16 -mt-px group-hover:w-48 bg-dawn group-hover:bg-zenith transition"></span>
-            <span className="text-xs tracking-widest uppercase">Projects</span>
+            <span className="nav-number">01</span>
+            <span className="nav-line"></span>
+            <span className="nav-number ">Project</span>
           </a>
         </li>
         <li className="nav-li">
@@ -23,9 +23,9 @@ const Navbar = (props) => {
             className="nav-a nav-transition"
             onClick={() => props.setNavState('skill')}
           >
-            <span className="text-xs tracking-wide">02</span>
-            <span className="inline-block w-24 h-px mx-16 -mt-px group-hover:w-48 bg-dawn group-hover:bg-zenith transition"></span>
-            <span className="text-xs tracking-widest uppercase">skills</span>
+            <span className="nav-number">02</span>
+            <span className="nav-line"></span>
+            <span className="nav-number">Skills</span>
           </a>
         </li>
         <li className="nav-li">
@@ -33,9 +33,9 @@ const Navbar = (props) => {
             className="nav-a nav-transition"
             onClick={() => props.setNavState('resume')}
           >
-            <span className="text-xs tracking-wide">03</span>
-            <span className="inline-block w-24 h-px mx-16 -mt-px group-hover:w-48 bg-dawn group-hover:bg-zenith transition"></span>
-            <span className="text-xs tracking-widest uppercase">Resume</span>
+            <span className="nav-number">03</span>
+            <span className="nav-line"></span>
+            <span className="nav-number">Resume</span>
           </a>
         </li>
       </ul>
