@@ -13,7 +13,9 @@ const Navbar = (props) => {
             className="nav-a nav-transition "
             onClick={() => props.setNavState('project')}
           >
-            01 project
+            <span className="nav-number">01</span>
+            <span className="nav-line"></span>
+            <span className="nav-number ">Project</span>
           </a>
         </li>
         <li className="nav-li">
@@ -21,7 +23,9 @@ const Navbar = (props) => {
             className="nav-a nav-transition"
             onClick={() => props.setNavState('skill')}
           >
-            02 skills
+            <span className="nav-number">02</span>
+            <span className="nav-line"></span>
+            <span className="nav-number">Skills</span>
           </a>
         </li>
         <li className="nav-li">
@@ -29,7 +33,9 @@ const Navbar = (props) => {
             className="nav-a nav-transition"
             onClick={() => props.setNavState('resume')}
           >
-            03 Resume
+            <span className="nav-number">03</span>
+            <span className="nav-line"></span>
+            <span className="nav-number">Resume</span>
           </a>
         </li>
       </ul>
