@@ -14,12 +14,20 @@
   text-transform: uppercase;
   color: #949495;
   letter-spacing: 0.1em;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .nav-ul-holder {
   padding-top: 40px;
 }
+
+.hover\:nav-a:hover,
+.nav-a {
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
 .nav-transition {
   transition-property: background-color, border-color, color, fill, stroke,
     opacity, box-shadow, transform;
@@ -38,6 +46,45 @@
   border: 3px;
   height: 3px;
   width: 8px;
+}
+
+.text-xs {
+  font-size: 10px;
+}
+
+.tracking-wide {
+  letter-spacing: 1px;
+}
+
+.tracking-widest {
+  letter-spacing: 3px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.w-48 {
+  width: 48px;
+}
+
+.w-24 {
+  width: 24px;
+}
+
+.mx-16 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.h-px {
+  height: 1px;
+}
+
+.group:hover .group-hover\:bg-zenith {
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
 }
 
 @keyframes popout {
@@ -63,18 +110,13 @@
   }
 }
 
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
 }
 
 @media only screen and (min-width: 1280px) {
-
 }
-
 
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
-
 }
