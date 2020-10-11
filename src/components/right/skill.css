@@ -56,37 +56,12 @@
   text-transform: uppercase;
 }
 
-/* .s-bottom {
-  bottom: 0;
-} */
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .s-desc {
-    /* text-align: center; */
-    margin-top: 0.3rem;
-    color: white;
-    margin-bottom: 0!important;
-    text-align: center;
-    font-size: 0.9em;
-    color: #949495;
-  }
+
 }
 
 @media only screen and (min-width: 1280px) {
-  .s-desc {
-    /* text-align: center; */
-    margin-top: 0.8rem;
-    color: white;
-    margin-bottom: 0!important;
-    text-align: center;
-    font-size: 1.1em;
-    color: #949495;
-  }
-}
-
-
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
 
 }
+

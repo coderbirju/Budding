@@ -108,41 +108,25 @@ class mainComponent extends Component {
 
   render() {
     return (
-      <div className="main-body ">
+      <div className='cover-container d-flex w-100 h-100 mx-auto flex-column'>
         <Loader loaded={this.state.loaded} options={options}>
-          <Row>
-            <Col
-              xs={24}
-              sm={24}
-              md={24}
-              lg={12}
-              xl={12}
-              xxl={12}
-              className="main-home"
-            >
-              <Home
+        <Row className='row-100'>
+          <Col md={12} className='main-home'>
+          <Home
                 name={this.state.nav}
                 intro={this.state.Intro}
                 social={this.state.social}
                 setNavState={this.setNavState}
               />
-            </Col>
-            <Col
-              xs={24}
-              sm={24}
-              md={24}
-              lg={12}
-              xl={12}
-              xxl={12}
-              className="main-detail ant-col-offset-12"
-            >
-              <Details
+          </Col>
+          <Col md={12} className='main-detail'>
+            <Details
                 project={this.state.project}
                 skill={this.state.skill}
                 selectedState={this.state.selectedState}
               />
-            </Col>
-          </Row>
+          </Col>
+        </Row>
         </Loader>
       </div>
     );
