@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'antd';
 import 'antd/dist/antd.css';
-import Home from './left/home';
+import Info from './left/info';
 import Details from './right/details';
 import './main.css';
 import axios from '../axios';
@@ -112,7 +112,7 @@ class mainComponent extends Component {
         <Loader loaded={this.state.loaded} options={options}>
         <Row className='row-100'>
           <Col md={12} className='main-home'>
-          <Home
+          <Info
                 name={this.state.nav}
                 intro={this.state.Intro}
                 social={this.state.social}
