@@ -12,8 +12,10 @@ class Info extends Component {
     return (
       <div sm={24} md={24} lg={24} className="info-holder">
         <div>
-          <Home Intro={this.props.Info}/>
+          <Home Intro={this.props ? this.props.intro: null}/>
+          {/* <Navbar/> */}
         </div>
+        <Social social={this.props ? this.props.social: null} />
       </div>
     );
   }
